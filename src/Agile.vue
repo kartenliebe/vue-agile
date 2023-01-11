@@ -69,7 +69,7 @@
         slides: [],
         slidesClonedAfter: [],
         slidesClonedBefore: [],
-        isSSR: false,
+        isSSR: true,
         transitionDelay: 0,
         translateX: 0,
         widthWindow: 0,
@@ -146,12 +146,7 @@
       }
     },
 
-    created () {
-      this.isSSR = typeof window === 'undefined'
-    },
-
     mounted () {
-      // Windows resize listener
       window.addEventListener('resize', this.getWidth)
 
       // Mouse and touch events
