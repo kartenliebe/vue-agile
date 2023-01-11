@@ -2,7 +2,7 @@
  * Component settings
  */
 
-import { orderBy } from 'lodash'
+import { orderBy } from 'lodash-es'
 
 const mixin = {
   props: {
